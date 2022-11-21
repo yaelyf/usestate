@@ -5,8 +5,8 @@ import Counter from './counter';
 function App() {
   return (
     <div className="App">
-      usestate
-      <p>Another line</p>
+      <h1>Hello to advanced internet technologies class</h1>
+      <p></p>
       <Counter></Counter>
     </div>
   );

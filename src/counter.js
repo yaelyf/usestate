@@ -9,11 +9,19 @@ function Counter() {
         )
         console.log(count)
     }
+    function reset (){
+        setCount(
+            function(oldCount){
+                return 1
+            }
+        )
+    }
     return (
       <div className="App">
-        <h1>Counter</h1>
-        <p>Counter is at {count}</p>
+        <h2>Counter</h2>
+        <h5>Counter is at {count}</h5>
         <button onClick={incr}>Click to add 1 to Counter</button>
+        <button onClick={reset}>Click to reset Counter</button>
       </div>
     );
   }

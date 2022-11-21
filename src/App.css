@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+h1 {
+  color:lightyellow;
+  background-color: coral;
+}
+h2 {
+  color: coral;
+}
+h5 {
+  color: coral;
+}
+button {
+  color:coral;
+  background-color: lightyellow;
+  border-color: coral;
+  width: 100px;
+  text-align: center;
+  padding-block: 5px;
+  margin: 4px 10px;
+  cursor: pointer;
+}
