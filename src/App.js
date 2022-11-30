@@ -5,6 +5,7 @@ import { useState } from 'react';
 function App() {
   const [delta, setDelta] = useState(1)
   const [maxNum, setMaxNum] = useState(1)
+  const [reset, setReset] = useState(false)
 
   function handleDelta(e){
     console.log(e);
@@ -13,6 +14,11 @@ function App() {
   function handleMaximum(e){
     console.log(e);
     setMaxNum(Number(e.target.value))
+  }
+
+  function getReset(data){
+    console.log(data)
+    setReset(data)
   }
 
   return (
@@ -24,8 +30,8 @@ function App() {
       <p></p>
       <h5>Maximum counter number:</h5>
       <input type = "number" value = {maxNum} onChange = {handleMaximum} />
-      <Counter delta = {delta} maxNum = {maxNum} />
-      <Counter delta = {delta} maxNum = {maxNum}/>
+      <Counter delta = {delta} maxNum = {maxNum} getReset = {getReset} needToReset = {reset}/>
+      <Counter delta = {delta} maxNum = {maxNum} getReset = {getReset} needToReset = {reset}/>
     </div>
   );
 }
